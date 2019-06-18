@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <Version>0.1.0</Version>
+    <Authors>Michael J. Currie</Authors>
+    <Company>Currie Technologies</Company>
+    <Product>Razor.Vibration</Product>
+    <Description>A Razor class library for interacting withthe browser vibration API.
+Use in Server-side Blazor apps.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Basaingeal/Razor.Vibration</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Basaingeal/Razor.Vibration</RepositoryUrl>
+    <PackageIconUrl>https://currietechnologyimages.blob.core.windows.net/logos/logo_v2_128.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Blazor Razor Vibrate Vibration JSInterop</PackageTags>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="package-lock.json" />
+    <Content Remove="package.json" />
+    <Content Remove="tsconfig.json" />
+    <Content Remove="tslint.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="package-lock.json" />
+    <None Include="package.json" />
+    <None Include="tsconfig.json" />
+    <None Include="tslint.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>
