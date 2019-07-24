@@ -1,13 +1,13 @@
 {
   "name": "currietechnologies-razorvibration",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Razor class library for interacting with the browser vibration api",
   "scripts": {
     "build": "tsc"
   },
   "devDependencies": {
-    "tslint": "^5.17.0",
-    "typescript": "^3.5.1"
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
   },
   "author": "Michael J. Currie"
 }

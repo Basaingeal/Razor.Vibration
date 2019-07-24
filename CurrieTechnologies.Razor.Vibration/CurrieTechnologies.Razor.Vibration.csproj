@@ -1,21 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Authors>Michael J. Currie</Authors>
     <Company>Currie Technologies</Company>
     <Product>Razor.Vibration</Product>
     <Description>A Razor class library for interacting withthe browser vibration API.
-Use in Server-side Blazor apps.</Description>
+Use in Server-side and Client-side Blazor apps.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Basaingeal/Razor.Vibration</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Basaingeal/Razor.Vibration</RepositoryUrl>
     <PackageIconUrl>https://currietechnologyimages.blob.core.windows.net/logos/logo_v2_128.png</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Blazor Razor Vibrate Vibration JSInterop</PackageTags>
-    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageReleaseNotes>
+    Target .NEt Standard
+    Deprecate CurrieTechnologies.Blazor.Vibration
+    Script tag update required
+    </PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -27,7 +32,7 @@ Use in Server-side Blazor apps.</Description>
   </ItemGroup>
 
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.0.0-preview7.19365.7" />
   </ItemGroup>
 
   <ItemGroup>
