@@ -17,6 +17,6 @@ namespace CurrieTechnologies.Razor.Vibration {
   };
 
   window.CurrieTechnologies.Razor.Vibration.VibrationSupported = (): boolean => {
-    return window.navigator.vibrate !== undefined;
+    return !!window.navigator.vibrate;
   };
 }

@@ -13,7 +13,7 @@ var CurrieTechnologies;
                 return window.navigator.vibrate(pattern);
             };
             window.CurrieTechnologies.Razor.Vibration.VibrationSupported = function () {
-                return window.navigator.vibrate !== undefined;
+                return !!window.navigator.vibrate;
             };
         })(Vibration = Razor.Vibration || (Razor.Vibration = {}));
     })(Razor = CurrieTechnologies.Razor || (CurrieTechnologies.Razor = {}));

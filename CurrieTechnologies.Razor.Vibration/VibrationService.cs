@@ -32,7 +32,7 @@ namespace CurrieTechnologies.Razor.Vibration
         /// </returns>
         public Task<bool> VibrateAsync(int duration)
         {
-            return this.jSRuntime.InvokeAsync<bool>(vibrateFunction, duration);
+            return this.jSRuntime.InvokeAsync<bool>(vibrateFunction, duration).AsTask();
         }
 
         /// <summary>
@@ -53,12 +53,12 @@ namespace CurrieTechnologies.Razor.Vibration
         /// </returns>
         public Task<bool> VibrateAsync(IEnumerable<int> pattern)
         {
-            return this.jSRuntime.InvokeAsync<bool>(vibrateFunction, pattern);
+            return this.jSRuntime.InvokeAsync<bool>(vibrateFunction, pattern).AsTask();
         }
 
         public Task<bool> BrowserSupportsVibrationAsync()
         {
-            return this.jSRuntime.InvokeAsync<bool>(supportFunction);
+            return this.jSRuntime.InvokeAsync<bool>(supportFunction).AsTask();
         }
     }
 }
